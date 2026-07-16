@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Registration</title>
+
+    <link rel="stylesheet" href="Lab5.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Student Registration</h1>
+
+        <form id="registrationForm">
+
+            <label for="firstName">
+                First Name <span>*</span>
+            </label>
+            <input type="text" id="firstName">
+
+            <label for="lastName">
+                Last Name <span>*</span>
+            </label>
+            <input type="text" id="lastName">
+
+            <label for="studentId">
+                Student ID <span>*</span>
+            </label>
+            <input type="text" id="studentId" placeholder="Example: 22-XXXXX-1">
+
+            <label for="email">
+                Email <span>*</span>
+            </label>
+            <input type="email" id="email" placeholder="example@student.aiub.edu">
+
+            <label for="credit">
+                Credit Completed <span>*</span>
+            </label>
+            <input type="number" id="credit" min="0" max="147">
+
+            <label for="department">
+                Department <span>*</span>
+            </label>
+            <select id="department">
+                <option value="">Select Department</option>
+                <option value="CSE">Computer Science and Engineering</option>
+                <option value="EEE">Electrical and Electronic Engineering</option>
+                <option value="BBA">Business Administration</option>
+                <option value="Architecture">Architecture</option>
+            </select>
+
+            <button type="submit">Register Student</button>
+
+        </form>
+
+        <h2>Registered Students</h2>
+
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Student ID</th>
+                    <th>Email</th>
+                    <th>Credits</th>
+                    <th>Department</th>
+                </tr>
+            </thead>
+
+            <tbody id="studentList">
+
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="Lab5.js"></script>
+
+</body>
+</html>
